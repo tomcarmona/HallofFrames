@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "PictureCollectionViewCell.h"
 
-@interface ViewController ()
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, PictureCollectionCellViewDelegate, UICollectionViewDelegateFlowLayout>
+@property NSMutableArray *pictures;
 
 @end
 
@@ -16,12 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSObject *image1 = [UIImage imageNamed:@"dragon"];
+    self.pictures = [[NSMutableArray alloc]initWithObjects: image1, nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 1;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PictureCellID" forIndexPath:indexPath];
+    
+    return cell;
+}
+
 
 @end

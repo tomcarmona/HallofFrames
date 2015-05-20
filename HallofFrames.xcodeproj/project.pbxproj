@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99F1794B1B0D0F36001FA142 /* PictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F1794A1B0D0F36001FA142 /* PictureCollectionViewCell.m */; };
 		BFC4B22B1B0D081700B3C891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC4B22A1B0D081700B3C891 /* main.m */; };
 		BFC4B22E1B0D081700B3C891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC4B22D1B0D081700B3C891 /* AppDelegate.m */; };
 		BFC4B2311B0D081700B3C891 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC4B2301B0D081700B3C891 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99F179491B0D0F36001FA142 /* PictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCollectionViewCell.h; sourceTree = "<group>"; };
+		99F1794A1B0D0F36001FA142 /* PictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCollectionViewCell.m; sourceTree = "<group>"; };
 		BFC4B2251B0D081700B3C891 /* HallofFrames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HallofFrames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC4B2291B0D081700B3C891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC4B22A1B0D081700B3C891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 			children = (
 				BFC4B22C1B0D081700B3C891 /* AppDelegate.h */,
 				BFC4B22D1B0D081700B3C891 /* AppDelegate.m */,
+				99F179491B0D0F36001FA142 /* PictureCollectionViewCell.h */,
+				99F1794A1B0D0F36001FA142 /* PictureCollectionViewCell.m */,
 				BFC4B22F1B0D081700B3C891 /* ViewController.h */,
 				BFC4B2301B0D081700B3C891 /* ViewController.m */,
 				BFC4B2321B0D081700B3C891 /* Main.storyboard */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFC4B2311B0D081700B3C891 /* ViewController.m in Sources */,
+				99F1794B1B0D0F36001FA142 /* PictureCollectionViewCell.m in Sources */,
 				BFC4B22E1B0D081700B3C891 /* AppDelegate.m in Sources */,
 				BFC4B22B1B0D081700B3C891 /* main.m in Sources */,
 			);
@@ -416,6 +422,7 @@
 				BFC4B24A1B0D081800B3C891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFC4B24B1B0D081800B3C891 /* Build configuration list for PBXNativeTarget "HallofFramesTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				BFC4B24D1B0D081800B3C891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
