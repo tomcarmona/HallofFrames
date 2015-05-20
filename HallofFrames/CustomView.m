@@ -7,35 +7,14 @@
 //
 
 #import "CustomView.h"
-#import <UIKit/UIKit.h>
+#import "PictureCollectionViewCell.h"
+#import "ViewController.h"
 
 @implementation CustomView
 
--(void)awakeFromNib {
-    [self.contentView]
+- (IBAction)onButtonTapped:(UIButton *)sender {
+    [self.delegate customViewDelegate:self buttonTapped:sender];
+
 }
-
-
-- (IBAction)onRedTapped:(id)sender {
-    [self.delegate CustomViewDelegate:self buttonTapped:sender];
-}
-
-- (IBAction)onGreenTapped:(id)sender {
-    [self.delegate CustomViewDelegate:self buttonTapped:sender];
-}
-
-- (IBAction)onBlueTapped:(id)sender {
-    [self.delegate CustomViewDelegate:self buttonTapped:sender];
-}
-
-
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 @end

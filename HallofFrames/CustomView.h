@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 @protocol CustomViewDelegate <NSObject>
 
--(void)CustomViewDelegate:(id)cell buttonTapped:(UIButton *)button;
+-(void)customViewDelegate:(id)cell buttonTapped:(UIButton *)button;
 
 @end
 
 @interface CustomView : UIView
-
 @property (nonatomic, assign)id <CustomViewDelegate> delegate;
+//@property NSMutableArray *pictures;
 
 @end
