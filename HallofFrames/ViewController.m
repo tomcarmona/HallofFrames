@@ -21,6 +21,7 @@
     NSObject *image1 = [UIImage imageNamed:@"dragon"];
     self.pictures = [[NSMutableArray alloc]initWithObjects: image1, nil];
 
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,9 +35,12 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PictureCellID" forIndexPath:indexPath];
-    
+    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",[self.pictures[indexPath]]]];
     return cell;
+
 }
+
+
 
 
 @end
