@@ -15,6 +15,8 @@
 		BFC4B2361B0D081700B3C891 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC4B2351B0D081700B3C891 /* Images.xcassets */; };
 		BFC4B2391B0D081700B3C891 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFC4B2371B0D081700B3C891 /* LaunchScreen.xib */; };
 		BFC4B2451B0D081800B3C891 /* HallofFramesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC4B2441B0D081800B3C891 /* HallofFramesTests.m */; };
+		BFCF1AB61B0D268F00021C93 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCF1AB51B0D268F00021C93 /* CustomView.m */; };
+		BFCF1AB81B0D26D300021C93 /* CustomizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFCF1AB71B0D26D300021C93 /* CustomizationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		BFC4B23E1B0D081800B3C891 /* HallofFramesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HallofFramesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC4B2431B0D081800B3C891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC4B2441B0D081800B3C891 /* HallofFramesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HallofFramesTests.m; sourceTree = "<group>"; };
+		BFCF1AB41B0D268F00021C93 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		BFCF1AB51B0D268F00021C93 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		BFCF1AB71B0D26D300021C93 /* CustomizationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CustomizationView.xib; path = ../CustomizationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,9 @@
 				99F1794A1B0D0F36001FA142 /* PictureCollectionViewCell.m */,
 				BFC4B22F1B0D081700B3C891 /* ViewController.h */,
 				BFC4B2301B0D081700B3C891 /* ViewController.m */,
+				BFCF1AB71B0D26D300021C93 /* CustomizationView.xib */,
+				BFCF1AB41B0D268F00021C93 /* CustomView.h */,
+				BFCF1AB51B0D268F00021C93 /* CustomView.m */,
 				BFC4B2321B0D081700B3C891 /* Main.storyboard */,
 				BFC4B2351B0D081700B3C891 /* Images.xcassets */,
 				BFC4B2371B0D081700B3C891 /* LaunchScreen.xib */,
@@ -206,6 +214,7 @@
 			files = (
 				BFC4B2341B0D081700B3C891 /* Main.storyboard in Resources */,
 				BFC4B2391B0D081700B3C891 /* LaunchScreen.xib in Resources */,
+				BFCF1AB81B0D26D300021C93 /* CustomizationView.xib in Resources */,
 				BFC4B2361B0D081700B3C891 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCF1AB61B0D268F00021C93 /* CustomView.m in Sources */,
 				BFC4B2311B0D081700B3C891 /* ViewController.m in Sources */,
 				99F1794B1B0D0F36001FA142 /* PictureCollectionViewCell.m in Sources */,
 				BFC4B22E1B0D081700B3C891 /* AppDelegate.m in Sources */,

@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 #import "PictureCollectionViewCell.h"
+#import "CustomView.h"
 
-@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, PictureCollectionCellViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, PictureCollectionCellViewDelegate, CustomViewDelegate>
+
 @property NSMutableArray *pictures;
 
 @end
@@ -18,15 +20,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    PictureCollectionViewCell *image1 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"dragon"] andWithPictureFrameColor:[UIColor blueColor]];
-    PictureCollectionViewCell *image2 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"dragon"] andWithPictureFrameColor:[UIColor blueColor]];
-    PictureCollectionViewCell *image3 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"dragon"] andWithPictureFrameColor:[UIColor blueColor]];
-    PictureCollectionViewCell *image4 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"dragon"] andWithPictureFrameColor:[UIColor blueColor]];
-    PictureCollectionViewCell *image5 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"dragon"] andWithPictureFrameColor:[UIColor blueColor]];
-
-
+    PictureCollectionViewCell *image1 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"gyro"] andWithPictureFrameColor:[UIColor blueColor]];
+    PictureCollectionViewCell *image2 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"scrooge"] andWithPictureFrameColor:[UIColor blueColor]];
+    PictureCollectionViewCell *image3 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"gizmo"] andWithPictureFrameColor:[UIColor blueColor]];
+    PictureCollectionViewCell *image4 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"jet"] andWithPictureFrameColor:[UIColor blueColor]];
+    PictureCollectionViewCell *image5 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"beakly"] andWithPictureFrameColor:[UIColor blueColor]];
 
     self.pictures = [[NSMutableArray alloc]initWithObjects:image1, image2, image3, image4, image5, nil];
+
 //    NSObject *image1 = [UIImage imageNamed:@"dragon"];
 //    self.pictures = [[NSMutableArray alloc]initWithObjects: image1,image1,image1,image1,  nil];
 
@@ -51,6 +52,16 @@
 
 }
 
+//-(void)CustomViewDelegate:(id)cell buttonTapped:(UIButton *)button {
+//    [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
+//
+//}
+
+-(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    CustomView *custView = [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
+    self.custView
+
+}
 
 
 
