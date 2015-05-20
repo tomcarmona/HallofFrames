@@ -18,9 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSObject *image1 = [UIImage imageNamed:@"dragon"];
-    self.pictures = [[NSMutableArray alloc]initWithObjects: image1, nil];
+    PictureCollectionViewCell *image1 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"dragon"] andWithPictureFrameColor:[UIColor blueColor]];
+    PictureCollectionViewCell *image2 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"dragon"] andWithPictureFrameColor:[UIColor blueColor]];
+    PictureCollectionViewCell *image3 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"dragon"] andWithPictureFrameColor:[UIColor blueColor]];
+    PictureCollectionViewCell *image4 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"dragon"] andWithPictureFrameColor:[UIColor blueColor]];
+    PictureCollectionViewCell *image5 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"dragon"] andWithPictureFrameColor:[UIColor blueColor]];
 
+
+
+    self.pictures = [[NSMutableArray alloc]initWithObjects:image1, image2, image3, image4, image5, nil];
+//    NSObject *image1 = [UIImage imageNamed:@"dragon"];
+//    self.pictures = [[NSMutableArray alloc]initWithObjects: image1,image1,image1,image1,  nil];
 
 }
 
@@ -30,12 +38,15 @@
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 1;
+    return self.pictures.count;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PictureCellID" forIndexPath:indexPath];
-    UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",[self.pictures[indexPath]]]];
+    PictureCollectionViewCell *imagePicture = [self.pictures objectAtIndex:indexPath.row];
+    cell.delegate = self;
+    cell.pictureImageView.image = imagePicture.image;
+
     return cell;
 
 }

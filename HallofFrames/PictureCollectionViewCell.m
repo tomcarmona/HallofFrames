@@ -10,6 +10,15 @@
 
 @implementation PictureCollectionViewCell
 
+-(instancetype)initWithPictureImageView:(UIImage *)image andWithPictureFrameColor:(UIColor *)frameColor {
+    self = [super init];
+    if (self) {
+        self.image = image;
+        self.frameColor = frameColor;
+    }
+    return self;
+}
+
 //-(void)PictureCollectionViewCell:(id)cell PictureImageView:(UIImage *)image PictureFrameColor:(UIColor *)frameColor{
 ////    [self.delegate PictureCollectionViewCell:self PictureImageView:sender PictureFrameColor:self];
 //}

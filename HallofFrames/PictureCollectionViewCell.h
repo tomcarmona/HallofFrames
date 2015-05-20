@@ -14,7 +14,11 @@
 @end
 
 @interface PictureCollectionViewCell : UICollectionViewCell
-
+-(instancetype)initWithPictureImageView:(UIImage *)image andWithPictureFrameColor:(UIColor *)frameColor;
+@property (weak, nonatomic) IBOutlet UIImageView *pictureImageView;
+@property UIImage *image;
+@property UIColor *frameColor;
 @property (nonatomic, assign) id <PictureCollectionCellViewDelegate> delegate;
+
 
 @end
