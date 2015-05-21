@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		99F1794B1B0D0F36001FA142 /* PictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F1794A1B0D0F36001FA142 /* PictureCollectionViewCell.m */; };
+		99F179501B0D761C001FA142 /* Brandon_med.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99F1794E1B0D761C001FA142 /* Brandon_med.otf */; };
+		99F179511B0D761C001FA142 /* Brandon_blk.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99F1794F1B0D761C001FA142 /* Brandon_blk.otf */; };
 		BFC4B22B1B0D081700B3C891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC4B22A1B0D081700B3C891 /* main.m */; };
 		BFC4B22E1B0D081700B3C891 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC4B22D1B0D081700B3C891 /* AppDelegate.m */; };
 		BFC4B2311B0D081700B3C891 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC4B2301B0D081700B3C891 /* ViewController.m */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		99F179491B0D0F36001FA142 /* PictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCollectionViewCell.h; sourceTree = "<group>"; };
 		99F1794A1B0D0F36001FA142 /* PictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCollectionViewCell.m; sourceTree = "<group>"; };
+		99F1794E1B0D761C001FA142 /* Brandon_med.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Brandon_med.otf; path = ../../../../../../Desktop/Deprocrastinator/Brandon_med.otf; sourceTree = "<group>"; };
+		99F1794F1B0D761C001FA142 /* Brandon_blk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Brandon_blk.otf; path = ../../../../../../Desktop/Deprocrastinator/Brandon_blk.otf; sourceTree = "<group>"; };
 		BFC4B2251B0D081700B3C891 /* HallofFrames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HallofFrames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC4B2291B0D081700B3C891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC4B22A1B0D081700B3C891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				BFCF1AB51B0D268F00021C93 /* CustomView.m */,
 				BFC4B2321B0D081700B3C891 /* Main.storyboard */,
 				BFC4B2351B0D081700B3C891 /* Images.xcassets */,
+				99F1794E1B0D761C001FA142 /* Brandon_med.otf */,
+				99F1794F1B0D761C001FA142 /* Brandon_blk.otf */,
 				BFC4B2371B0D081700B3C891 /* LaunchScreen.xib */,
 				BFC4B2281B0D081700B3C891 /* Supporting Files */,
 			);
@@ -213,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFC4B2341B0D081700B3C891 /* Main.storyboard in Resources */,
+				99F179501B0D761C001FA142 /* Brandon_med.otf in Resources */,
+				99F179511B0D761C001FA142 /* Brandon_blk.otf in Resources */,
 				BFC4B2391B0D081700B3C891 /* LaunchScreen.xib in Resources */,
 				BFCF1AB81B0D26D300021C93 /* CustomizationView.xib in Resources */,
 				BFC4B2361B0D081700B3C891 /* Images.xcassets in Resources */,

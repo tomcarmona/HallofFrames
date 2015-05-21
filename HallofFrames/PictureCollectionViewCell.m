@@ -19,8 +19,4 @@
     return self;
 }
 
-//-(void)PictureCollectionViewCell:(id)cell PictureImageView:(UIImage *)image PictureFrameColor:(UIColor *)frameColor{
-////    [self.delegate PictureCollectionViewCell:self PictureImageView:sender PictureFrameColor:self];
-//}
-
 @end

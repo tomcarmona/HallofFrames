@@ -12,11 +12,11 @@
 
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, CustomViewDelegate>
 
-@property NSMutableArray *pictures;
+
 @property (weak, nonatomic) IBOutlet CustomView *custView;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property NSIndexPath *indexPath;
-
+@property NSMutableArray *pictures;
 
 @end
 
@@ -28,20 +28,20 @@
     PictureCollectionViewCell *image2 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"scrooge"] andWithPictureFrameColor:[UIColor blackColor]];
     PictureCollectionViewCell *image3 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"gizmo"] andWithPictureFrameColor:[UIColor blackColor]];
     PictureCollectionViewCell *image4 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"jet"] andWithPictureFrameColor:[UIColor blackColor]];
-    PictureCollectionViewCell *image5 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"beakly"] andWithPictureFrameColor:[UIColor blackColor]];
-
+    PictureCollectionViewCell *image5 = [[PictureCollectionViewCell alloc] initWithPictureImageView:[UIImage imageNamed:@"minish"] andWithPictureFrameColor:[UIColor blackColor]];
     self.pictures = [[NSMutableArray alloc]initWithObjects:image1, image2, image3, image4, image5, nil];
 
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.pictures.count;
 }
+
+#pragma mark - CollectionView
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PictureCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PictureCellID" forIndexPath:indexPath];
@@ -65,9 +65,21 @@
 
 -(void)customViewDelegate:(id)cell buttonTapped:(UIButton *)button {
     PictureCollectionViewCell *object = [self.pictures objectAtIndex:self.indexPath.row];
-    object.frameColor = button.backgroundColor;
+    if (button.tag == 1) {
+        object.frameColor = [UIColor redColor];
+    } else if (button.tag == 2) {
+        object.frameColor = [UIColor greenColor];
+    } else if (button.tag == 3) {
+        object.frameColor = [UIColor blueColor];
+    }
+
     [self.collectionView reloadData];
     [self.custView removeFromSuperview];
+
+}
+
+-(void)buttonColorForLoop {
+ 
 
 }
 
